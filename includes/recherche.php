@@ -16,7 +16,7 @@
 			       	<h3 class="panel-title">Manager de proximité Département Comptable</h3>
 			    </div>
 			    <div class="panel-body">
-                    <a href="details.php"><img class="card-img-bottom" src="../Assets/Images/comptable.jfif" alt="Card image" style="width:100%"></a>
+                    <a href="details.php"><img class="card-img-bottom" src="../Assets/Images/comptable.jfif" alt="Card image" style="width:100%" ></a>
              		<hr/>
              		<span>Posté par Maïmouna<em> le 16/02/21 à 16h/05min/20s</em></span>
             	</div>
@@ -25,10 +25,10 @@
         <div class="col-sm-4">
         	<div class="panel panel-info">
            		<div class="panel-heading">
-           			<h3 class="panel-title">AIDE-SOIGNANT H / F</h3>
+           			<h3 class="panel-title">AIDE-SOIGNANT H / F</h3> 
            		</div>
            		<div class="panel-body">
-                    <img class="card-img-bottom" src="../Assets/Images/AideSoignant.jfif" alt="Card image" style="width:100%">
+                    <img class="card-img-bottom" src="../Assets/Images/AideSoignant.jfif" alt="Card image" style="width:100%" height="220">
           		    <hr/>
 		            <span>Posté par Maïmouna<em> le 16/02/21 à 16h/05min/20s</em></span>
 		        </div>
@@ -39,7 +39,7 @@
 			    </div>
 			    <div class="panel-body">
       
-                    <a href="details.php"><img class="card-img-bottom" src="../Assets/Images/AssistantBioMedical.jfif" alt="Card image" style="width:100%"></a>
+                    <a href="details.php"><img class="card-img-bottom" src="../Assets/Images/AssistantBioMedical.jfif" alt="Card image" style="width:100%" height="200"></a>
              		<hr/>
              		<span>Posté par Maïmouna<em> le 16/02/21 à 16h/05min/20s</em></span>
             	</div>
@@ -51,17 +51,17 @@
 		       		<h3 class="panel-title">ASSISTANT DENTAIRE H/F - 1 POSTE EN CDI</h3>
 		       	</div>
 		       	<div class="panel-body">
-                    <a href="details.php"><img class="card-img-bottom" src="../Assets/Images/Dentaire.jfif" alt="Card image" style="width:100%"></a>
+                    <a href="details.php"><img class="card-img-bottom" src="../Assets/Images/Dentaire.jfif" alt="Card image" style="width:100%" height="210"></a>
                     <hr/>
                     <span>Posté par Maïmouna<em> le 16/02/21 à 16h/05min/20s</em></span>
         	    </div>
             </div>
           	<div class="panel panel-info">
 			    <div class="panel-heading">
-			       	<h3 class="panel-title">Chef de projet en santé F/H</h3>
+			       	<h3 class="panel-title">Chef de projet en santé F/H</h3>         
 			    </div>
 			    <div class="panel-body">
-                    <a href="details.php"><img class="card-img-bottom" src="../Assets/Images/chefProjSant.jfif" alt="Card image" style="width:100%"></a>
+                    <a href="details.php"><img class="card-img-bottom" src="../Assets/Images/chefProjSant.jfif" alt="Card image" style="width:100%" height="190"></a>
              		<hr/>
 			       	<span>Posté par Maïmouna<em> le 16/02/21 à 16h/05min/20s</em></span>
             	</div>
