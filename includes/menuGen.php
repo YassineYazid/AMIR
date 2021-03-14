@@ -27,13 +27,19 @@
                 		</li>
               		</ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#"><span class="glyphicon glyphicon-log-in"  style="cursor:pointer" onclick="openNav()" ></span> Connexion</a></li> 
+                        <li><a href="#"><span class="glyphicon glyphicon-log-in"  style="cursor:pointer" onclick="openNav()" > <B>Connexion</B></a></li> </span>
                         <li><a href=""></a></li>
                     </ul>
 				</div>
 			</div>
-		</nav>
-	</div>
+            
+		</nav> 
+        <div >
+            <a href="../Views/RH/connexionRH.php"> <input type="button" style="float:right; margin:5px;font-family:tahoma" value="RH"> </a> 
+            <a href="../Views/Candidats/connexionCandidat.php"> <input type="button" style="float:right; margin:5px;font-family:tahoma" value="Candidat" ></a>
+        </div>
+      
+    </div>
 </div>
 <style>
     .overlay {
