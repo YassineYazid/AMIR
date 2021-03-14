@@ -13,9 +13,15 @@
 	src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
 	integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
 	crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="Assets/css/style.css">
 <link rel="stylesheet" href="styleProfilCandidat.css">
 </head>
 <body>
+
+	<?php
+include ("../../includes/menuCandidat.php");
+?>
+
 	<div class="container">
 		<div style="display: inline-block;">
 			<div style="display: inline-block; vertical-align: middle;"
@@ -50,30 +56,94 @@
 						aria-controls="contact" aria-selected="false">Vos CV et lettres de
 						motivation</button>
 				</li>
+				<li class="nav-item" role="presentation">
+					<button class="nav-link" id="interet-tab" data-bs-toggle="tab"
+						data-bs-target="#interet" type="button" role="tab"
+						aria-controls="interet" aria-selected="false">Mes centres
+						d'intérêt</button>
+				</li>
 			</ul>
 
 			<div class="tab-content" id="myTabContent">
 				<div class="tab-pane fade show active" id="home" role="tabpanel"
 					aria-labelledby="home-tab">
 					<div class="contenu">
-						<h3>Mes expériences et mes formations</h3>
-						<p>Votre parcours reprend l'ensemble de vos expériences
-							professionnelles ou extra-professionnelles, et de vos formations
-						</p>
+						<div>
+							<h3>Mes expériences et mes formations</h3>
+							<p>Votre parcours reprend l'ensemble de vos expériences
+								professionnelles ou extra-professionnelles, et de vos formations
+							</p>
+						</div>
+
+						<div class="expfor">
+							<div class="experiences">
+								<div>
+									<p>
+										<b>Chef de projet</b> Université de Versailles Saint Quentin <br/>
+										Versailles (78) - 2018-2020 (2 ans)
+									</p>
+									<p>
+										<b>Développeur logiciel</b> AFPA <br/>
+										Balma-Gramont (31) - 2019 (6 mois)
+									</p>
+								</div>
+
+								<div class="bouton">
+									<i class="fas fa-plus-circle"></i> Ajouter une expérience
+								</div>
+							</div>
+							<div class="formations">
+								<div class="bouton">
+									<i class="fas fa-plus-circle"></i> Ajouter une formation
+								</div>
+							</div>
+						</div>
+
+						<!-- <div class="competence">Java</div> -->
+					</div>
+
+					<div>
+						
+					</div>
+				</div>
+
+				<div class="tab-pane fade" id="profile" role="tabpanel"
+					aria-labelledby="profile-tab">
+					<div class="contenu">
+						<div class="contenu">
+							<h3>Possédez-vous ces compétences ?</h3>
+							<p>Ce sont les compétences attendues par les recruteurs</p>
+							<div class="contenu">
+								<div class="competence">Gestion de projets</div>
+								<div class="competence">SCRUM Master</div>
+							</div>
+						</div>
+						<div class="contenu">
+							<h3>Savoirs et savoir-faire</h3>
+							<div class="contenu">
+								<div class="competence">Rédaction de rapports</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="contact" role="tabpanel"
+					aria-labelledby="interet-tab">
+					<div class="contenu">
+						<div class="contenu">
+							<h3>Mes CV</h3>
+							<p>Vous pouvez télécharger, créer, modifpx; ier vos CV et
+								envoyer une candidature spontanée</p>
+						</div>
 
 						<div class="contenu">
-							<div class="competence">Java</div>
+							<h3>Mes réalisations</h3>
+							<p>Ajoutez tout document mettant en valeur vos compétences</p>
 						</div>
-					</div>
-					<div>
-						<div class="bouton">
-							<i class="fas fa-plus-circle"></i> Ajouter une expérience
-						</div>
-						<div class="bouton">
-							<i class="fas fa-plus-circle"></i> Ajouter une formation
-						</div>
-					</div>
 
+					</div>
+				</div>
+				<div class="tab-pane fade" id="interet" role="tabpanel"
+					aria-labelledby="contact-tab">
 					<div class="contenu">
 						<h3>Centres d'intérêt</h3>
 						<p>Un centre d'intérêt est une activité pour laquelle vous
@@ -89,45 +159,13 @@
 
 					</div>
 				</div>
-				<div class="tab-pane fade" id="profile" role="tabpanel"
-					aria-labelledby="profile-tab">
-					<div class="contenu">
-					<div class="contenu">
-						<h3>Possédez-vous ces compétences ?</h3>
-						<p>Ce sont les compétences attendues par les recruteurs</p>
-						<div class="contenu">
-								<div class="competence">Gestion de projets</div>
-						</div>
-					</div>
-					<div class="contenu">
-							<h3>Savoirs et savoir-faire</h3>
-							<div class="contenu">
-								<div class="competence">R�daction de rapports</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="tab-pane fade" id="contact" role="tabpanel"
-					aria-labelledby="contact-tab">
-					<div class="contenu">
-					<div class="contenu">
-					<h3>Mes CV</h3>
-					<p>Vous pouvez télécharger, créer, modifier vos CV et envoyer
-						une candidature spontanée</p>
-					</div>
-
-						<div class="contenu">
-							<h3>Mes réalisations</h3>
-							<p>Ajoutez tout document mettant en valeur vos compétences</p>
-						</div>
-
-					</div>
-				</div>
 			</div>
 		</div>
-
-		<a href="../../index.php">Accuiel</a> <a href="competenceCandidat.php">Compétences</a>
 	</div>
+	</div>
+
+	<a href="../../index.php">Accueil</a>
+	<a href="competenceCandidat.php">Compétences</a>
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
 		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
 		crossorigin="anonymous"></script>
