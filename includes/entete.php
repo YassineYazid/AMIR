@@ -1,11 +1,7 @@
  <div class="container">
-     <p style="font-size : 7em;">Aide à la Mobilité interne et au Recrutement : Amir</p>
-    <h3>Entreprise</h3>
-    <p>Vous optez pour la mobilité interne? La CPAM vous propose un espace dédié :</p>
-      <form action="" method="post">
-          <a href="../Views/Candidats/connexionCandidat.php"><input type="button" value="Candidat"></a>
-          <a href="../Views/RH/connexionRH.php"> <input type="button" value="RH"></a>
-      </form>
+     <p style="font-size : 7em;"><i><B style="color:DodgerBlue;">A</B>ide à la <B style="color:DodgerBlue;">M</B>obilité <B style="color:DodgerBlue;">I</B>nterne et au <B style="color:DodgerBlue;">R</B>ecrutement </i></p>
+    <h3><B>Entreprise</B></h3>
+    <p><B>Vous optez pour la mobilité interne? La CPAM vous propose un espace dédié :</B></p>
     <hr>
 </div>
 
