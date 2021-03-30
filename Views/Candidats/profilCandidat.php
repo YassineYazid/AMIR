@@ -131,13 +131,24 @@ include ("../../includes/menuProfil.php");
 					<div class="contenu">
 						<div class="contenu">
 							<h3>Mes CV</h3>
-							<p>Vous pouvez télécharger, créer, modifpx; ier vos CV et
-								envoyer une candidature spontanée</p>
-						</div>
+							
+		
+      			<br>
+      			<p> &nbsp;<B> Veuillez joindre votre CV </B></p>
+      			<div class="col-10">
+        			<input type="file" class="custom-file-input" id="validatedCustomFile" required>
+        			<label class="custom-file-label" for="validatedCustomFile">CV...</label>
+     			</div>
+      		</div>
+		</div>
 
 						<div class="contenu">
-							<h3>Mes réalisations</h3>
-							<p>Ajoutez tout document mettant en valeur vos compétences</p>
+							<h3>Mes lettres de motivations</h3>
+							<p>&nbsp; <B> Veuillez joindre une lettre de motivation </B> </p>
+							
+							<input type="file" class="custom-file-input" id="validatedCustomFile" required>
+							<label class="custom-file-label" for="validatedCustomFile">Lettre de Motivation...</label>
+      
 						</div>
 
 					</div>
