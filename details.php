@@ -21,7 +21,7 @@
                             LEADER TECHNIQUE JAVA (F/H - AIX-EN-PROVENCE - CS) <br/>
                         </p>
                         <hr/>
-                        <a href="#" style="float :right;">Postuler</a>
+                        <a href="../views/Candidats/competenceCandidat.php" style="float :right;">Postuler</a>
                         <span>Posté par Maïmouna<em> le 16/02/21 à 16h/05min/20s</em></span>
                     </div>
           	    </div>
@@ -97,7 +97,7 @@
                             Ainsi que sur les logiciels suivants : IntelliJ, JIRA, Confluence
                         </p>
                         <hr/>
-                        <a href="#" style="float :right;">Postuler</a>
+                        <a href="../views/Candidats/competenceCandidat.php" style="float :right;">Postuler</a>
                         <span>Posté par Maïmouna<em> le 16/02/21 à 16h/05min/20s</em></span>
                     </div>
           	    </div>
