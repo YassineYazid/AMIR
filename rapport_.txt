@@ -1,0 +1,21 @@
+
+Décisions :
+-mettre bouton swith candidat/recruteur en haut avec la connexion
+- expace candidat personnel : onglet parcours faire 2 tableaux expériences et formations
+- formulaire pour saisir une expérience : Description de l'exp*, date début*, date fin, entreprise
+- formulaire pour saisir formations : Description de la formation, mois/année, durée, organisme de formation
+- onglet compétences : reprendre les cases à cocher de Yassine et Ariane
+
+- A Faire:
+* Rencontre avec spécialiste UX/UI mardi 9/3 à 16h (zoom)
+* travail de groupe espace recruteur
+* travail de groupe pour la page RH/fonctionnlaités RH.
+
+
+Questions:
+(Yassine)- Dans l'onglet compétences du profilCandidat.php, quelle est la différence avec le formualire competenceCandidat.php ?
+- pour les compétences, utilisation d'une liste avec choix multiples dans competenceCandidat.php
+- Listes les compétences sélectionnées par le candidat, possibilité d'ajouter ou supprimer
+- prendre le code tableau de la page accueilCandidat.php et l'insérer dans un 4èmé onglet "Mes candidatures" (dans profilCandidat.php)
+- un profil RH valide une annonce, l'accueil affiche uniquement les annonces validées. Le recruteur créé, le RH, valide et publie.
+- le RH a tous les pouvoir.
