@@ -21,7 +21,7 @@
 <body>
 
 	<?php
-include ("../../includes/menuCandidat.php");
+include ("../../includes/menuProfil.php");
 ?>
 
 	<div class="container">
