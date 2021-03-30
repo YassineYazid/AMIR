@@ -31,9 +31,9 @@
           </button>
 		  <input id="toggle" type="checkbox"  
       checked data-toggle="toggle" 
-      data-on="<a href='../../views/Candidats/profilCandidat.php'><p style='color:white;'> <B>Candidat</B> </p>  </a>" 
+      data-on="<a href='../../Views/Candidats/profilCandidat.php'><p style='color:white;'> <B>Candidat</B> </p>  </a>" 
 
-      data-off="<a href='../../views/Recruteurs/accueilRecruteur.php'> <p style='color:white;'> <B>Recruteur</B> </p></a>"
+      data-off="<a href='../../Views/Recruteurs/accueilRecruteur.php'> <p style='color:white;'> <B>Recruteur</B> </p></a>"
       data-onstyle="success" data-offstyle="primary">
 
       <script>
