@@ -39,8 +39,8 @@
       <script>
       $(function() {
       $('toggle').bootstrapToggle({
-        on: <a "href='../../views/Candidats/profilCandidat.php'"> </a>,
-        off: <a "href='../../views/Recruteurs/accueilRecruteur.php'"></a>
+        on: <a "href='../../Views/Candidats/profilCandidat.php'"> </a>,
+        off: <a "href='../../Views/Recruteurs/accueilRecruteur.php'"></a>
         });
       })
       </script>
@@ -49,10 +49,10 @@
 		  <a href="../../index.php" class="btn btn-danger">  
 		   Déconexion </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="../../views/Candidats/profilCandidat.php">Profil</a></li>
+            <li><a class="dropdown-item" href="../../Views/Candidats/profilCandidat.php">Profil</a></li>
             <li><a class="dropdown-item" href="#">Message</a></li>
             <li><a class="dropdown-item" href="#">Candidature</a></li>
-			<li><a href="../../views/Candidats/Presentationdesservices.php" class="dropdown-item">Présentation des services</a></li>
+			<li><a href="../../Views/Candidats/Presentationdesservices.php" class="dropdown-item">Présentation des services</a></li>
 	<li class="nav-item dropdown">
           
 			
