@@ -29,15 +29,30 @@
   <button class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Menu
           </button>
-		  <input id="toggle" type="checkbox"  checked data-toggle="toggle" data-on="<i class='bi bi-person'> Candidat </i>" data-off="<i class='bi bi-person-fill'> Recruteur </i>">
+		  <input id="toggle" type="checkbox"  
+      checked data-toggle="toggle" 
+      data-on="<a href='../../Views/Candidats/profilCandidat.php'><p style='color:white;'> <B>Candidat</B> </p>  </a>" 
+
+      data-off="<a href='../../Views/Recruteurs/accueilRecruteur.php'> <p style='color:white;'> <B>Recruteur</B> </p></a>"
+      data-onstyle="success" data-offstyle="primary">
+
+      <script>
+      $(function() {
+      $('toggle').bootstrapToggle({
+        on: <a "href='../../Views/Candidats/profilCandidat.php'"> </a>,
+        off: <a "href='../../Views/Recruteurs/accueilRecruteur.php'"></a>
+        });
+      })
+      </script>
+
 
 		  <a href="../../index.php" class="btn btn-danger">  
 		   Déconexion </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="../../views/Candidats/profilCandidat.php">Profil</a></li>
+            <li><a class="dropdown-item" href="../../Views/Candidats/profilCandidat.php">Profil</a></li>
             <li><a class="dropdown-item" href="#">Message</a></li>
             <li><a class="dropdown-item" href="#">Candidature</a></li>
-			<li><a href="../../views/Candidats/Presentationdesservices.php" class="dropdown-item">Présentation des services</a></li>
+			<li><a href="../../Views/Candidats/Presentationdesservices.php" class="dropdown-item">Présentation des services</a></li>
 	<li class="nav-item dropdown">
           
 			
@@ -51,9 +66,9 @@
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="../../Assets/js/bootstrap.min.js"></script>
-      
+        <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
         <script src="../../Assets/js/vendor/holder.min.js"></script>
-       
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
         <script src="../../Assets/js/ie10-viewport-bug-workaround.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
