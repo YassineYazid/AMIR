@@ -99,31 +99,34 @@ include ("../../includes/menuProfil.php");
 
 
 
-								<button class="bouton" onclick="afficherExpForm()" id="ajoutForm">
-									<i class="fas fa-plus-circle"></i> Ajouter une expérience
-								</button>
+									<button class="bouton" onclick="afficherExpForm()" id="ajoutExp">
+										<i class="fas fa-plus-circle"></i> Ajouter une expérience
+									</button>
 
-									<div class="form-group" id="expForm" style="display:none">
-										<label for="inputNomExp">Description de l'expérience</label> <input
-											type="text" class="form-control" id="inputNomExp"
-											placeholder="Nom de l'expérience"> 
+
+									<div id="fromExp" style="display:none">
+										<div class="form-group" id="expForm">
+											<label for="inputNomExp">Description de l'expérience</label> <input
+												type="text" class="form-control" id="inputNomExp"
+												placeholder="Nom de l'expérience"> 
+												
+										</div>
+										<div class="form-group">
+											<label for="exampleInputPassword1">Date de début</label> 
+											<input
+												type="date" class="form-control"
+												id="exampleInputPassword1" placeholder="Password">
 											
-									</div>
-									<div class="form-group">
-										<label for="exampleInputPassword1">Date de début</label> 
-										<input
-											type="date" class="form-control"
-											id="exampleInputPassword1" placeholder="Password">
-										
-									</div>
+										</div>
 
-									<div class="form-check">
-										<input type="checkbox" class="form-check-input"
-											id="exampleCheck1"> <label class="form-check-label"
-											for="exampleCheck1">Check me out</label>
+										<div class="form-check">
+											<input type="checkbox" class="form-check-input"
+												id="exampleCheck1"> <label class="form-check-label"
+												for="exampleCheck1">Check me out</label>
+										</div>
+										<button type="submit" class="btn btn-primary">Rajouter</button>
 									</div>
-									<button type="submit" class="btn btn-primary">Rajouter</button>
-									</form>
+									
 								</div>
 							</div>
 							<div class="formations">
@@ -163,13 +166,24 @@ include ("../../includes/menuProfil.php");
 					<div class="contenu">
 						<div class="contenu">
 							<h3>Mes CV</h3>
-							<p>Vous pouvez télécharger, créer, modifier vos CV et
-								envoyer une candidature spontanée</p>
-						</div>
+							
+		
+      			<br>
+      			<p> &nbsp;<B> Veuillez joindre votre CV </B></p>
+      			<div class="col-10">
+        			<input type="file" class="custom-file-input" id="validatedCustomFile" required>
+        			<label class="custom-file-label" for="validatedCustomFile">CV...</label>
+     			</div>
+      		</div>
+		</div>
 
 						<div class="contenu">
-							<h3>Mes réalisations</h3>
-							<p>Ajoutez tout document mettant en valeur vos compétences</p>
+							<h3>Mes lettres de motivations</h3>
+							<p>&nbsp; <B> Veuillez joindre une lettre de motivation </B> </p>
+							
+							<input type="file" class="custom-file-input" id="validatedCustomFile" required>
+							<label class="custom-file-label" for="validatedCustomFile">Lettre de Motivation...</label>
+      
 						</div>
 
 					</div>
