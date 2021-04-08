@@ -13,7 +13,7 @@
 	src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
 	integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
 	crossorigin="anonymous"></script>
-<link rel="stylesheet" href="Assets/css/style.css">
+<link rel="stylesheet" href="../../Assets/css/style.css">
 <link rel="stylesheet" href="styleProfilCandidat.css">
 
 <script src="profilForms.js"></script>
@@ -25,13 +25,13 @@ include ("../../includes/menuProfil.php");
 ?>
 
 	<div class="container">
-		<div id="identite" >
+		<div id="identite">
 			<div style="display: inline-block; vertical-align: middle;"
 				class="fb-profile">
 				<img class="rounded-circle" src="../../Assets/Images/icon.png"
 					alt="" width="100" height="100">
 			</div>
-			<div style="display: inline-block; vertical-align: middle;">
+			<div id="detailsId">
 				<h3>
 					M. <b>Toto Titi</b>
 				</h3>
@@ -40,8 +40,7 @@ include ("../../includes/menuProfil.php");
 				<p>toto.titi@mail.fr</p>
 			</div>
 		</div>
-		<br/>
-		<br/>
+		<br />
 
 		<div>
 			<ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -88,58 +87,107 @@ include ("../../includes/menuProfil.php");
 						<div class="expfor">
 							<div class="experiences">
 								<div>
+									<h4>Expériences</h4>
 									<p>
-										<b>Chef de projet</b> Université de Versailles Saint Quentin
-										<br /> Versailles (78) - 2018-2020 (2 ans)
-									</p>
-									<p>
-										<b>Développeur logiciel</b> AFPA <br /> Balma-Gramont (31) -
-										2019 (6 mois)
+										<b>Chef de projet</b> CPAM <br /> Toulouse (31000) - 2018-2020
+										(2 ans)
 									</p>
 
 
 
-									<button class="bouton" onclick="afficherExpForm()" id="ajoutExp">
+
+									<button class="bouton" onclick="afficherExpForm()"
+										id="ajoutExp">
 										<i class="fas fa-plus-circle"></i> Ajouter une expérience
 									</button>
 
 
-									<div id="fromExp" style="display:none">
+									<div id="formExp">
 										<div class="form-group" id="expForm">
-											<label for="inputNomExp">Description de l'expérience</label> <input
-												type="text" class="form-control" id="inputNomExp"
-												placeholder="Nom de l'expérience"> 
-												
+											<label for="inputNomExp">Description de l'expérience</label>
+											<input type="text" class="form-control" id="inputNomExp"
+												placeholder="Nom de l'expérience">
 										</div>
+
+										<div class="form-group" id="expForm">
+											<label for="nomEntreprise">Nom de l'entreprise</label> <input
+												type="text" class="form-control" id="nomEntreprise"
+												placeholder="Nom de l'entreprise">
+										</div>
+
 										<div class="form-group">
-											<label for="exampleInputPassword1">Date de début</label> 
-											<input
-												type="date" class="form-control"
-												id="exampleInputPassword1" placeholder="Password">
-											
+											<label for="dateDebutExp">Date de début</label> <input
+												id="dateDebutExp" type="date" class="form-control">
+
 										</div>
 
 										<div class="form-check">
 											<input type="checkbox" class="form-check-input"
 												id="exampleCheck1"> <label class="form-check-label"
-												for="exampleCheck1">Check me out</label>
+												for="exampleCheck1">Expérience encore en cours</label>
 										</div>
-										<button type="submit" class="btn btn-primary">Rajouter</button>
+
+										<div class="form-group">
+											<label for="dateFinExp">Date de fin</label> <input
+												id="dateFinExp" type="date" class="form-control">
+
+										</div>
+
+
+										<button type="submit" class="btn btn-primary"
+											onClick="ajouterExp()">Ajouter expérience</button>
 									</div>
-									
+
 								</div>
 							</div>
 							<div class="formations">
-								<div class="bouton">
+								<h4>Formations</h4>
+								<p>
+									<b>Chef de projet</b> Université de Versailles Saint Quentin <br />
+									Versailles (78) - 2018-2020 (2 ans)
+								</p>
+								<p>
+									<b>Développeur logiciel</b> AFPA <br /> Balma-Gramont (31) -
+									2019 (6 mois)
+								</p>
+								<button class="bouton" id="ajoutForm"
+									onclick="afficherFormForm()">
 									<i class="fas fa-plus-circle"></i> Ajouter une formation
-								</div>
-							</div>
-						</div>
+								</button>
+								<div id="formForm">
+									<div class="form-group" id="expForm">
+										<label for="inputNomExp">Description de l'expérience</label>
+										<input type="text" class="form-control" id="inputNomExp"
+											placeholder="Nom de l'expérience">
+									</div>
 
-						<!-- <div class="competence">Java</div> -->
+									<div class="form-group" id="expForm">
+										<label for="inputNomExp">Description de l'expérience</label>
+										<input type="text" class="form-control" id="inputNomExp"
+											placeholder="Nom de l'expérience">
+									</div>
+
+									<div class="form-group" id="dureeFormation">
+										<input type="number" class="form-control" min=1> <select>
+											<option value="mois">mois</option>
+											<option value="annee">année(s)</option>
+										</select>
+
+									</div>
+
+
+
+
+									<button type="submit" class="btn btn-primary"
+										onClick="ajouterForm()">Ajouter formation</button>
+								</div>
+
+							</div>
+
+						</div>
 					</div>
 
-					<div></div>
+
 				</div>
 
 				<div class="tab-pane fade" id="profile" role="tabpanel"
@@ -161,32 +209,39 @@ include ("../../includes/menuProfil.php");
 						</div>
 					</div>
 				</div>
+
 				<div class="tab-pane fade" id="contact" role="tabpanel"
 					aria-labelledby="interet-tab">
 					<div class="contenu">
 						<div class="contenu">
 							<h3>Mes CV</h3>
-							
-		
-      			<br>
-      			<p> &nbsp;<B> Veuillez joindre votre CV </B></p>
-      			<div class="col-10">
-        			<input type="file" class="custom-file-input" id="validatedCustomFile" required>
-        			<label class="custom-file-label" for="validatedCustomFile">CV...</label>
-     			</div>
-      		</div>
-		</div>
 
-						<div class="contenu">
-							<h3>Mes lettres de motivations</h3>
-							<p>&nbsp; <B> Veuillez joindre une lettre de motivation </B> </p>
-							
-							<input type="file" class="custom-file-input" id="validatedCustomFile" required>
-							<label class="custom-file-label" for="validatedCustomFile">Lettre de Motivation...</label>
-      
+
+							<br>
+							<p>
+								&nbsp;<B> Veuillez joindre votre CV </B>
+							</p>
+							<div class="col-10">
+								<input type="file" class="custom-file-input"
+									id="validatedCustomFile" required> <label
+									class="custom-file-label" for="validatedCustomFile">CV...</label>
+							</div>
 						</div>
+					</div>
+
+					<div class="contenu">
+						<h3>Mes lettres de motivations</h3>
+						<p>
+							&nbsp; <B> Veuillez joindre une lettre de motivation </B>
+						</p>
+
+						<input type="file" class="custom-file-input"
+							id="validatedCustomFile" required> <label
+							class="custom-file-label" for="validatedCustomFile">Lettre de
+							Motivation...</label>
 
 					</div>
+
 				</div>
 				<div class="tab-pane fade" id="candidature" role="tabpanel"
 					aria-labelledby="candidature-tab">
@@ -197,6 +252,7 @@ include ("../../includes/menuProfil.php");
 
 					</div>
 				</div>
+
 				<div class="tab-pane fade" id="interet" role="tabpanel"
 					aria-labelledby="contact-tab">
 					<div class="contenu">
@@ -209,18 +265,39 @@ include ("../../includes/menuProfil.php");
 							<div class="competence">Ornithologie</div>
 						</div>
 						<div>
-							<div class="bouton">Ajouter un centre d'intérêt</div>
+							<button id="boutonInteret" class="bouton"
+								onClick="afficherFormInteret()">Ajouter un centre d'intérêt</button>
+
 						</div>
 
+						<div id="formInteret">
+							<div class="form-group" id="interetForm">
+								<label for="inputNomInteret">Nom</label> <input type="text"
+									class="form-control" id="inputNomInteret"
+									placeholder="Centre d'intérêt">
+							</div>
+							<button type="submit" class="btn btn-primary"
+								onClick="ajouterInteret()">Ajouter centre d'intérêt</button>
+						</div>
 					</div>
+
+
+
 				</div>
 			</div>
+
+
+			<!-- <div class="competence">Java</div> -->
+		</div>
+
+		<div class="container">
+			<a href="../../index.php">Accueil</a> <a
+				href="competenceCandidat.php">Compétences</a>
 		</div>
 	</div>
-	</div>
 
-	<a href="../../index.php">Accueil</a>
-	<a href="competenceCandidat.php">Compétences</a>
+
+
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
 		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
 		crossorigin="anonymous"></script>

@@ -30,7 +30,7 @@
     width: 50%; 
     float:left;    
     background-color: cornsilk; 
-    min-height: 300px;
+    min-height: 500px;
     border:solid 1px; 
     border-color: transparent;
     border-right-color: black;
@@ -41,7 +41,7 @@
     width: 50%; 
     float:right;    
     background-color: ivory; 
-    min-height: 300px; 
+    min-height: 4=500px; 
 
 }
 
@@ -52,4 +52,29 @@
 #identite{
     display: inline-block;
     margin-bottom: 100px;
+}
+
+#formExp{
+    visibility:hidden;
+
+}
+
+#formForm{
+    visibility: hidden;
+
+}
+
+#formInteret{
+    visibility: hidden;
+
+}
+
+#detailsId{
+    display: inline-block; 
+    vertical-align: middle;
+    padding-left: 20px;
+}
+
+#dureeFormation{
+    display: inline;
 }
