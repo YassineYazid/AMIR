@@ -35,7 +35,7 @@
 
       data-off="<a href='../../Views/Recruteurs/accueilRecruteur.php'> <p style='color:white;'> <B>Recruteur</B> </p></a>"
       data-onstyle="success" data-offstyle="primary">
-
+      <a href="../../views/Recruteurs/accueilRecruteur.php" class="btn btn-primary">  Recruteur </a>
       <script>
       $(function() {
       $('toggle').bootstrapToggle({
