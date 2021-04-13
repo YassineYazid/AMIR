@@ -290,10 +290,6 @@ include ("../../includes/menuProfil.php");
 			<!-- <div class="competence">Java</div> -->
 		</div>
 
-		<div class="container">
-			<a href="../../index.php">Accueil</a> <a
-				href="competenceCandidat.php">Compétences</a>
-		</div>
 	</div>
 
 
