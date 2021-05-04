@@ -33,11 +33,11 @@ include ("../../includes/menuProfil.php");
 			</div>
 			<div id="detailsId">
 				<h3>
-					M. <b>Toto Titi</b>
+					<b>Nicolas Dupont</b>
 				</h3>
-				<h4>Service : Ministère des documents classés</h4>
+				<h4>Poste : Assistant RH</h4>
 				<p>Tel : 06 01 01 01 01</p>
-				<p>toto.titi@mail.fr</p>
+				<p>nicolas.dupont@mail.fr</p>
 			</div>
 		</div>
 		<br />
@@ -246,8 +246,42 @@ include ("../../includes/menuProfil.php");
 				<div class="tab-pane fade" id="candidature" role="tabpanel"
 					aria-labelledby="candidature-tab">
 					<div class="contenu">
+					<style>
+						table {
+						font-family: arial, sans-serif;
+						border-collapse: collapse;
+						width: 100%;
+						}
+
+						td, th {
+						border: 1px solid #dddddd;
+						text-align: left;
+						padding: 8px;
+						}
+
+						tr:nth-child(even) {
+						background-color: #dddddd;
+						}
+					</style>
 						<h3>Mes candidatures</h3>
-						<p>llll</p>
+
+						<table>
+						<tr>
+							<th>Poste</th>
+							<th>Recruteur</th>
+							<th>Contact</th>
+						</tr>
+						<tr>
+							<td>Chargé De Recrutement</td>
+							<td>Marie Leblanc</td>
+							<td>marie.leblanc@mail.fr</td>
+						</tr>
+						<tr>
+							<td>Manager RH</td>
+							<td>Pierre Delort</td>
+							<td>pierre.delort@mail.fr</td>
+						</tr>
+						</table>
 
 
 					</div>
@@ -290,6 +324,7 @@ include ("../../includes/menuProfil.php");
 			<!-- <div class="competence">Java</div> -->
 		</div>
 
+	
 	</div>
 
 
