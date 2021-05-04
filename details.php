@@ -18,11 +18,11 @@
                 <div class="panel panel-danger">			
                     <div class="panel-body" style="background-color: #ddd;">
                         <p style="font-size :2.5em;">
-                            LEADER TECHNIQUE JAVA (F/H - AIX-EN-PROVENCE - CS) <br/>
+                            LEADER TECHNIQUE JAVA (H/F) <br/>
                         </p>
                         <hr/>
-                        <a href="../Views/Candidats/competenceCandidat.php" style="float :right;">Postuler</a>
-                        <span>Posté par Maïmouna<em> le 16/02/21 à 16h/05min/20s</em></span>
+                        <a href="../views/Candidats/competenceCandidat.php" style="float :right;">Postuler</a>
+                        <span>Posté<em> le 16/02/21 à 16h/05min/20s</em></span>
                     </div>
           	    </div>
             </div>
@@ -64,7 +64,7 @@
                         Type de Contrat : CDI <br/>
                         Lieu : Toulouse
                         <hr/>
-                        <span>Posté par Maïmouna<em> le 16/02/21 à 16h/05min/20s</em></span>
+                        <span>Posté<em> le 16/02/21 à 16h/05min/20s</em></span>
                     </div>
           	    </div>
             </div>   
@@ -97,8 +97,8 @@
                             Ainsi que sur les logiciels suivants : IntelliJ, JIRA, Confluence
                         </p>
                         <hr/>
-                        <a href="../Views/Candidats/competenceCandidat.php" style="float :right;">Postuler</a>
-                        <span>Posté par Maïmouna<em> le 16/02/21 à 16h/05min/20s</em></span>
+                        <a href="../views/Candidats/competenceCandidat.php" style="float :right;">Postuler</a>
+                        <span>Posté<em> le 16/02/21 à 16h/05min/20s</em></span>
                     </div>
           	    </div>
             </div>
