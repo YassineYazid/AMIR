@@ -69,8 +69,8 @@ body {font-family: "Lato", sans-serif;}
 <body>
 	
     
-    <?php
-include ("../../includes/menuProfil.php");
+<?php
+include ("../../includes/menuRecruteur.php");
 ?>
 
 <div class="tab">
