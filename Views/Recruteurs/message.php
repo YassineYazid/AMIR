@@ -74,11 +74,10 @@ include ("../../includes/menuRecruteur.php");
 ?>
 
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'James')" id="defaultOpen">James C.</button>
-  <button class="tablinks" onclick="openCity(event, 'Jean')">Jean S.</button>
+  <button class="tablinks" onclick="openCity(event, 'Jean')" id="defaultOpen">Jean C.</button>
   <button class="tablinks" onclick="openCity(event, 'Louis')">Louis M.</button>
-  <button class="tablinks" onclick="openCity(event, 'Jean')">Marie R.</button>
-  <button class="tablinks" onclick="openCity(event, 'Louis')">Clair P.</button>
+  <button class="tablinks" onclick="openCity(event, 'Marie')">Marie R.</button>
+  <button class="tablinks" onclick="openCity(event, 'Clair')">Clair P.</button>
 </div>
 
 <style>
@@ -135,62 +134,31 @@ include ("../../includes/menuRecruteur.php");
 </style>
 
 
-<div id="James" class="tabcontent">
-  <h3>James C.</h3>
-  <div class="container">
-  <img src="#" alt="Avatar">
-  <p>Hello. How are you today?</p>
-  <span class="time-right">11:00</span>
-</div>
-
-<div class="container darker">
-  <img src="#" alt="Avatar" class="right">
-  <p>Hey! I'm fine. Thanks for asking!</p>
-  <span class="time-left">11:01</span>
-</div>
-
-<div class="container">
-  <img src="#" alt="Avatar">
-  <p>Sweet! So, what do you wanna do today?</p>
-  <span class="time-right">11:02</span>
-</div>
-
-<div class="container darker">
-  <img src="#" alt="Avatar" class="right">
-  <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
-  <span class="time-left">11:05</span>
-</div>
-</div>
-
 <div id="Jean" class="tabcontent">
-  <h3>Jean S.</h3>
-  <div class="container">
-  <img src="#" alt="Avatar">
-  <p>Hello. How are you today?</p>
-  <span class="time-right">11:00</span>
-</div>
-
-<div class="container darker">
-  <img src="#" alt="Avatar" class="right">
-  <p>Hey! I'm fine. Thanks for asking!</p>
-  <span class="time-left">11:01</span>
+  <h3>Jean C. (RH)</h3>
+  <div class="container darker">
+  <img src="https://images.unsplash.com/photo-1577202214328-c04b77cefb5d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80" alt="Avatar" class="right">
+  <p>Bonjour, Je n'arrive pas à joindre Monsieur Gauthier</p>
+  <span class="time-left">11:00</span>
 </div>
 
 <div class="container">
-  <img src="#" alt="Avatar">
-  <p>Sweet! So, what do you wanna do today?</p>
-  <span class="time-right">11:02</span>
+  <img src="https://images.unsplash.com/photo-1551108168-229956dd31bf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" alt="Avatar" >
+  <p>Bonjour, je vous laisse son mail "rene.gauthier@mail.fr"</p> 
+  <span class="time-right">11:01</span>
+</div>
+<div class="container darker" class="right">
+  <img src="https://images.unsplash.com/photo-1577202214328-c04b77cefb5d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80" alt="Avatar" class="right">
+  <p>Merci beaucoup!!</p>
+  <span class="time-left">11:01</span>
 </div>
 
-<div class="container darker">
-  <img src="#" alt="Avatar" class="right">
-  <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
-  <span class="time-left">11:05</span>
-</div>
+
+
 </div>
 
 <div id="Louis" class="tabcontent">
-  <h3>Louis M.</h3>
+  <h3>Louis M. (Candidat)</h3>
   <p>Louis is my name.</p>
 </div>
 
@@ -200,7 +168,7 @@ include ("../../includes/menuRecruteur.php");
 </div>
 
 <div id="Clair" class="tabcontent">
-  <h3>Clair P.</h3>
+  <h3>Clair P. (Recruteur)</h3>
   <p>Clair is my name.</p>
 </div>
 
