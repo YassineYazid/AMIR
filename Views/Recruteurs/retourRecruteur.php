@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>CPAM profil 1</title>
+<title>Mon profil</title>
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
 	rel="stylesheet"
@@ -17,7 +17,7 @@
 <link rel="stylesheet" href="styleProfilCandidat.css">
 
 <?php
-include ("../../includes/menuProfil.php");
+include ("../../includes/menuRecruteur.php");
 ?>
 
 <style>
@@ -105,7 +105,7 @@ ul li{
 	<input type="checkbox">
 	<span class="slider round"></span>
 	</label></td>
-	<td><a href="../../views/Recruteurs/regCompatible.php"> <button type="button" class="btn btn-primary" >détail</button>
+	<td><a href="../../Views/Recruteurs/regCompatible.php"> <button type="button" class="btn btn-primary" >détail</button>
 </a></td> </tr>
     <tr>
       <th scope="row">
@@ -121,7 +121,7 @@ ul li{
 		<span class="slider round"></span>
 		</label> </td>
     <td>
-    <a href="../../views/Recruteurs/regCompatible.php"> <button type="button" class="btn btn-primary" >détail</button>
+    <a href="../../Views/Recruteurs/regCompatible.php"> <button type="button" class="btn btn-primary" >détail</button>
 </a></td>    </tr>
     <tr>
       <th scope="row">
@@ -137,7 +137,7 @@ ul li{
 		</label></td>
 	<td>
   
-<a href="../../views/Recruteurs/regCompatible.php"> <button type="button" class="btn btn-primary" >détail</button>
+<a href="../../Views/Recruteurs/regCompatible.php"> <button type="button" class="btn btn-primary" >détail</button>
 </a></td>
 		</tr>
     <tbody>
@@ -172,7 +172,7 @@ ul li{
 	<input type="checkbox">
 	<span class="slider round"></span>
 	</label></td>
-	<td><a href="../../views/Recruteurs/retourRecruteur.php"> <button type="button" class="btn btn-primary" >détail</button>
+	<td><a href="../../Views/Recruteurs/retourRecruteur.php"> <button type="button" class="btn btn-primary" >détail</button>
 </a></td> </tr>
     <tr>
       <th scope="row">
@@ -188,7 +188,7 @@ ul li{
 		<span class="slider round"></span>
 		</label> </td>
     <td>
-    <a href="../../views/Recruteurs/retourRecruteur.php"> <button type="button" class="btn btn-primary" >détail</button>
+    <a href="../../Views/Recruteurs/retourRecruteur.php"> <button type="button" class="btn btn-primary" >détail</button>
 </a></td>    </tr>
     <tr>
       <th scope="row">
@@ -204,7 +204,7 @@ ul li{
 		</label></td>
 	<td>
   
-<a href="../../views/Recruteurs/retourRecruteur.php"> <button type="button" class="btn btn-primary" >détail</button>
+<a href="../../Views/Recruteurs/retourRecruteur.php"> <button type="button" class="btn btn-primary" >détail</button>
 </a></td>
 		</tr>
     <tbody>
