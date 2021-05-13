@@ -19,7 +19,7 @@
 <body>
 
 	<?php
-include ("../../includes/menuProfil.php");
+include ("../../includes/menuRecruteur.php");
 ?>
 
 <style>
@@ -54,7 +54,7 @@ include ("../../includes/menuProfil.php");
     <h5 class="card-title">Tech RR</h5>
     <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <button type="button" class="btn btn-primary">Détails</button>
+    <button type="button" class="btn btn-primary" href="../../Views/Recruteurs/detailAnnonce.php">Détails</button>
 	</br></br>
 	<a href="#" class="card-link">Card link</a>
     <a href="#" class="card-link">Another link</a>
@@ -66,10 +66,10 @@ include ("../../includes/menuProfil.php");
     <h5 class="card-title">Téléconseillers</h5>
     <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <button type="button" class="btn btn-primary">Détails</button>
+    <button type="button" class="btn btn-primary" href="../../Views/Recruteurs/detailAnnonce.php">Détails</button>
 	</br></br>
-	<a href="#" class="card-link">Card link</a>
-    <a href="#" class="card-link">Another link</a>
+	<a href="../../Views/Recruteurs/detailAnnonce.php" class="card-link">Card link</a>
+    <a href="../../Views/Recruteurs/detailAnnonce.php" class="card-link">Another link</a>
   </div>
 </div>
 &nbsp;
@@ -78,7 +78,7 @@ include ("../../includes/menuProfil.php");
     <h5 class="card-title">Tech PE</h5>
     <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <button type="button" class="btn btn-primary">Détails</button>
+    <button type="button" class="btn btn-primary" href="../../Views/Recruteurs/detailAnnonce.php">Détails</button>
 	</br></br>
 	<a href="#" class="card-link">Card link</a>
     <a href="#" class="card-link">Another link</a>
@@ -182,8 +182,8 @@ input:checked + .slider:before {
 	<input type="checkbox">
 	<span class="slider round"></span>
 	</label></td>
-	<td><button type="button" class="btn btn-primary">détail</button></td>
-    </tr>
+	<td><a href="../../Views/Recruteurs/retourRecruteur.php"> <button type="button" class="btn btn-primary" >détail</button>
+</a></td> </tr>
     <tr>
       <th scope="row">
 	  <input type="checkbox" class="custom-control-input" id="customCheck2" name="toto">
@@ -197,8 +197,9 @@ input:checked + .slider:before {
 		<input type="checkbox">
 		<span class="slider round"></span>
 		</label> </td>
-	<td><button type="button" class="btn btn-primary">détail</button></td>	
-    </tr>
+    <td>
+    <a href="../../Views/Recruteurs/retourRecruteur.php"> <button type="button" class="btn btn-primary" >détail</button>
+</a></td>    </tr>
     <tr>
       <th scope="row">
 	  <input type="checkbox" class="custom-control-input" id="customCheck2" name="toto">	  </th>
@@ -211,7 +212,10 @@ input:checked + .slider:before {
 		<input type="checkbox">
 		<span class="slider round"></span>
 		</label></td>
-	<td><button type="button" class="btn btn-primary">détail</button></td>
+	<td>
+  
+<a href="../../Views/Recruteurs/retourRecruteur.php"> <button type="button" class="btn btn-primary" >détail</button>
+</a></td>
 		</tr>
 
 
@@ -376,7 +380,7 @@ function closeForm() {
 	<input type="checkbox">
 	<span class="slider round"></span>
 	</label></td>
-	<td><button type="button" class="btn btn-primary">détail</button></td>
+	<td><button type="button" class="btn btn-primary" href="../../Views/Recruteurs/retourRecruteur.php" >détail</button></td>
     </tr>
     <tr>
       <th scope="row">
@@ -390,7 +394,7 @@ function closeForm() {
 		<input type="checkbox">
 		<span class="slider round"></span>
 		</label> </td>
-	<td><button type="button" class="btn btn-primary">détail</button></td>	
+	<td><button type="button" class="btn btn-primary" href="../../Views/Recruteurs/retourRecruteur.php">détail</button></td>	
     </tr>
   
     <script language="JavaScript">
