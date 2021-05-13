@@ -41,11 +41,146 @@ include ("../../includes/menuRecruteur.php");
 </br>
 <div class="text-center"> 
 <a>
-<button type="button" class="button button3" >Je rédige une annonce </button>
+
+<button id="myBtn1" type="button" class="button button3"> Je rédige une annonce </button>
 </a>
 
 </div>
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="container">
+  <form>
+
+    <label for="fname">Titre de l'annonce</label>
+    <input type="text" id="fname" name="firstname" placeholder="Titre de l'annonce">
+
+    <label for="lname">Disponibilité</label>
+    <input type="text" id="lname" name="lastname" placeholder="Disponibilité">
+
+    <label for="annonce">Poste</label>
+    <select id="annonce" name="annonce">
+      <option value="Comptable">Comptable</option>
+      <option value="RH">RH</option>
+      <option value="Développeur">Développeur</option>
+    </select>
+
+    <label for="subject">Description de l'annonce</label>
+    <textarea id="subject" name="subject" placeholder="Description" style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+
+  <style>
+  input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+  </style>
+</div>
+
+</div>
+</div>
 </br>
+
+<style>
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 80%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 3% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 10px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+
+<script>
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn1");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+
 
 <h2> Mes Annonces </h2>
 <div class="row">
@@ -54,7 +189,7 @@ include ("../../includes/menuRecruteur.php");
     <h5 class="card-title">Tech RR</h5>
     <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <button type="button" class="btn btn-primary" href="../../Views/Recruteurs/detailAnnonce.php">Détails</button>
+    <button type="button" class="btn btn-primary" href="../../views/Recruteurs/detailAnnonce.php">Détails</button>
 	</br></br>
 	<a href="#" class="card-link">Card link</a>
     <a href="#" class="card-link">Another link</a>
@@ -66,10 +201,10 @@ include ("../../includes/menuRecruteur.php");
     <h5 class="card-title">Téléconseillers</h5>
     <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <button type="button" class="btn btn-primary" href="../../Views/Recruteurs/detailAnnonce.php">Détails</button>
+    <button type="button" class="btn btn-primary" href="../../views/Recruteurs/detailAnnonce.php">Détails</button>
 	</br></br>
-	<a href="../../Views/Recruteurs/detailAnnonce.php" class="card-link">Card link</a>
-    <a href="../../Views/Recruteurs/detailAnnonce.php" class="card-link">Another link</a>
+	<a href="../../views/Recruteurs/detailAnnonce.php" class="card-link">Card link</a>
+    <a href="../../views/Recruteurs/detailAnnonce.php" class="card-link">Another link</a>
   </div>
 </div>
 &nbsp;
@@ -78,7 +213,7 @@ include ("../../includes/menuRecruteur.php");
     <h5 class="card-title">Tech PE</h5>
     <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <button type="button" class="btn btn-primary" href="../../Views/Recruteurs/detailAnnonce.php">Détails</button>
+    <button type="button" class="btn btn-primary" href="../../views/Recruteurs/detailAnnonce.php">Détails</button>
 	</br></br>
 	<a href="#" class="card-link">Card link</a>
     <a href="#" class="card-link">Another link</a>
@@ -182,7 +317,7 @@ input:checked + .slider:before {
 	<input type="checkbox">
 	<span class="slider round"></span>
 	</label></td>
-	<td><a href="../../Views/Recruteurs/retourRecruteur.php"> <button type="button" class="btn btn-primary" >détail</button>
+	<td><a href="../../views/Recruteurs/retourRecruteur.php"> <button type="button" class="btn btn-primary" >détail</button>
 </a></td> </tr>
     <tr>
       <th scope="row">
@@ -198,7 +333,7 @@ input:checked + .slider:before {
 		<span class="slider round"></span>
 		</label> </td>
     <td>
-    <a href="../../Views/Recruteurs/retourRecruteur.php"> <button type="button" class="btn btn-primary" >détail</button>
+    <a href="../../views/Recruteurs/retourRecruteur.php"> <button type="button" class="btn btn-primary" >détail</button>
 </a></td>    </tr>
     <tr>
       <th scope="row">
@@ -214,7 +349,7 @@ input:checked + .slider:before {
 		</label></td>
 	<td>
   
-<a href="../../Views/Recruteurs/retourRecruteur.php"> <button type="button" class="btn btn-primary" >détail</button>
+<a href="../../views/Recruteurs/retourRecruteur.php"> <button type="button" class="btn btn-primary" >détail</button>
 </a></td>
 		</tr>
 
@@ -380,7 +515,7 @@ function closeForm() {
 	<input type="checkbox">
 	<span class="slider round"></span>
 	</label></td>
-	<td><button type="button" class="btn btn-primary" href="../../Views/Recruteurs/retourRecruteur.php" >détail</button></td>
+	<td><button type="button" class="btn btn-primary" href="../../views/Recruteurs/retourRecruteur.php" >détail</button></td>
     </tr>
     <tr>
       <th scope="row">
@@ -394,7 +529,7 @@ function closeForm() {
 		<input type="checkbox">
 		<span class="slider round"></span>
 		</label> </td>
-	<td><button type="button" class="btn btn-primary" href="../../Views/Recruteurs/retourRecruteur.php">détail</button></td>	
+	<td><button type="button" class="btn btn-primary" href="../../views/Recruteurs/retourRecruteur.php">détail</button></td>	
     </tr>
   
     <script language="JavaScript">
