@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>CPAM profil 1</title>
+<title>Mon profil</title>
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
 	rel="stylesheet"
@@ -19,7 +19,7 @@
 
 
 <?php
-include ("../../includes/menuProfil.php");
+include ("../../includes/menuRecruteur.php");
 ?>
 </br>
 
